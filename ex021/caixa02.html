@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(117, 117, 117);
+            padding: 3px;
+            box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.317);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.349);
+        }
+
+        article {
+            background-color: rgb(184, 179, 179);
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(133, 133, 133);
+        }
+
+        footer {
+            background-color: black;
+            color: lightgrey;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>   <!-- Essas Tags servem para trazer semântica (melhoria para os mecânismos de busca)-->
+    <header> <!-- CABEÇARIO -->
+        <h1>Meu site</h1>
+        <nav>  <!-- NAVEGAÇÃO (MENU)-->
+            <a href="#">Link 01</a>
+            <a href="#">Link 02</a>
+            <a href="#">Link 03</a>
+            <a href="#">Link 04</a>
+        </nav>
+    </header>
+    <main> <!-- CONTEÚDO PRINCIPAL -->
+        <section id="assuntos">
+
+        </section>  <!-- SEÇÕES -->
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consequuntur et fugiat corporis ipsam harum. Dolores enim neque deserunt fuga, porro consequatur maiores vel tempora placeat cum quia culpa magni.</p>
+                <aside>
+                    <p>Artigo escrito por Natan.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer> <!-- RODAPÉ -->
+        <p>Desenvolvido por eu mesmo.</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

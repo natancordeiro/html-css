@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumentar e diminuir o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.jpeg" type="image/jpeg">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.jpeg" type="image/jpeg">
+        <img src="imagens/foto-g.jpeg" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/iza-meu-talisma.mp3" type="audio/mpeg">
+        <source src="midia/iza-meu-talisma.ogg" type="audio/ogg">
+        <source src="midia/iza-meu-talisma.mkv" type="audio/mkv">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/iza-meu-talisma.mp3"> Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
